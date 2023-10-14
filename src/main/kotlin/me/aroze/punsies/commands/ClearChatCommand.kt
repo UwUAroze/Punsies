@@ -8,9 +8,8 @@ import me.vaperion.blade.annotation.command.Permission
 import org.bukkit.Bukkit
 import org.bukkit.command.CommandSender
 import org.bukkit.entity.Player
-import me.vaperion.blade.context.Context;
 
-class ClearChatCommand {
+object ClearChatCommand {
 
     @Command("clearchat", "cc")
     @Permission("punsies.clearchat")
