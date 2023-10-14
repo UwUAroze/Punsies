@@ -1,0 +1,7 @@
+name: Punsies
+version: '${version}'
+main: me.aroze.punsies.Punsies
+api-version: '1.20'
+description: Punsy wunsies
+authors: [Aroze]
+website: https://github.com/UwUAroze/Punsies/
