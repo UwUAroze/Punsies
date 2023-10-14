@@ -22,7 +22,7 @@ dependencies {
     compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
     implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8")
 
-    implementation("com.github.uwuaroze:arozeutils:160eff811a")
+    implementation("com.github.uwuaroze:arozeutils:3b3a312dc4")
     implementation("com.github.vaperion.blade:bukkit:3.0.8")
 }
 

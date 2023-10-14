@@ -1,6 +1,7 @@
 package me.aroze.punsies
 
 import me.aroze.arozeutils.kotlin.reflection.getClassesInPackage
+import me.aroze.arozeutils.kotlin.reflection.registerListenersPackage
 import me.aroze.arozeutils.minecraft.FancyPlugin
 import me.aroze.arozeutils.minecraft.generic.text.translator.addCustomReplacements
 import me.vaperion.blade.Blade
@@ -11,6 +12,7 @@ class Punsies : FancyPlugin() {
     override fun onEnable() {
         registerColourCodes()
         registerCommands()
+        registerListenersPackage("me.aroze.punsies.listeners")
     }
 
     override fun onPluginDisable() {
