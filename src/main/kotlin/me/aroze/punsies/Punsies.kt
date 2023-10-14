@@ -2,12 +2,14 @@ package me.aroze.punsies
 
 import me.aroze.arozeutils.kotlin.reflection.getClassesInPackage
 import me.aroze.arozeutils.minecraft.FancyPlugin
+import me.aroze.arozeutils.minecraft.generic.text.translator.addCustomReplacements
 import me.vaperion.blade.Blade
 import me.vaperion.blade.bukkit.BladeBukkitPlatform
 
 class Punsies : FancyPlugin() {
 
     override fun onEnable() {
+        registerColourCodes()
         registerCommands()
     }
 
@@ -21,6 +23,13 @@ class Punsies : FancyPlugin() {
             .build()
         for (command in getClassesInPackage("me.aroze.punsies.commands"))
             commandHandler.register(command.getDeclaredConstructor().newInstance())
+    }
+
+    private fun registerColourCodes() {
+        addCustomReplacements(mapOf(
+            "p" to ("<color:#efd4ff>" to "</color>"),
+            "s" to ("<color:#e4b5ff>" to "</color>"),
+        ))
     }
 
 }
